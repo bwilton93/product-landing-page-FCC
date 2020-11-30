@@ -1,3 +1,7 @@
+html {
+  font-size: 10;
+}
+
 * {
   position: relative;
   box-sizing: border-box;
@@ -7,6 +11,16 @@
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+a:hover {
+  border-bottom: 3px solid currentColor;
 }
 
 body {
@@ -53,18 +67,12 @@ header {
   align-items: center;
   text-align: center;
   margin-left: 0;
-  background-color: red;
 }
 
 @media (max-width: 650px) {
   .logo > img {
     margin: 0 auto;
   }
-}
-
-nav {
-  font-weight: 400;
-  background-color: green;
 }
 
 nav > ul {
@@ -75,7 +83,8 @@ nav > ul {
 }
 
 nav > ul > li {
-  background-color: red;
+  text-align: center;
+  flex: 1;
 }
 
 @media (max-width: 650px) {
@@ -86,7 +95,7 @@ nav > ul > li {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 50px 10px 50px;
   }
   nav li {
     padding-bottom: 5px;
